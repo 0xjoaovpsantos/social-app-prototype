@@ -1,2 +1,19 @@
-# react-native-test
-Exercício de teste para vaga de react-native developer
+## Exercício
+
+Para completar esse exercício você deve desenvolver um aplicativo social que contenha as seguintes páginas:
+
+### Página Inicial
+A página inicial deve conter a listagem dos amigos do usuário, mostrando o avatar, nome completo, última vez que esteve online e o status.
+
+### Perfil do Amigo
+O perfil do amigo pode ser acessado da página inicial. Deve mostrar o avatar do amigo, nome completo, e-mail, redes sociais (se o amigo tiver), galeria de imagens, a descrição do amigo e uma opção para acessar o chat.
+
+### Perfil
+Página onde o usuário pode alterar seus dados cadastrais, informando a sua imagem de avatar, nome, email e descrição do perfil.
+
+
+## Detalhes
+
+* Para consumo dos dados usar o [Json Placeholder](https://jsonplaceholder.typicode.com/).
+* O uso de React Redux é obrigatório para manter o state do aplicativo.
+* 
