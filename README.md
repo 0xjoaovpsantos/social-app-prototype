@@ -21,3 +21,9 @@ Página onde o usuário pode alterar seus dados cadastrais, informando a sua ima
 * A organização das pastas e componentes é de sua escolha.
 * Você pode estender as páginas e adicionar funcionalidades ou melhorias que julgar serem necessárias.
 * Você deve priorizar a usabilidade e experiência do usuário no desenvolvimento das telas.
+
+
+## Entrega
+
+* Anexar as capturas de tela do aplicativo desenvolvido.
+* Informar qual abordagem usou para desenvolver o aplicativo.
