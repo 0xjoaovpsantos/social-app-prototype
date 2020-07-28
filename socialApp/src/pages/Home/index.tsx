@@ -1,19 +1,19 @@
 import React from 'react';
 import LinearGradient from 'react-native-linear-gradient';
-import { Text } from 'react-native';
+import { View } from 'react-native';
 
-import FriendCard from '../../components/CircularFriendPhoto';
-
-import { Container } from './styles';
+import ListFriendsStatus from '../../components/ListFriendsStatus';
 
 const Home: React.FC = () => {
   return (
-    <LinearGradient
-      colors={['#275DC2', '#ffffff', '#ffffff']}
-      style={{ flex: 1 }}
+    <View
+      style={{
+        flex: 1,
+        backgroundColor: '#F1F1F3',
+      }}
     >
-      <FriendCard />
-    </LinearGradient>
+      <ListFriendsStatus />
+    </View>
   );
 };
 
