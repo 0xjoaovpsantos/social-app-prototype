@@ -2,6 +2,8 @@ import React from 'react';
 import LinearGradient from 'react-native-linear-gradient';
 import { Text } from 'react-native';
 
+import FriendCard from '../../components/CircularFriendPhoto';
+
 import { Container } from './styles';
 
 const Home: React.FC = () => {
@@ -10,7 +12,7 @@ const Home: React.FC = () => {
       colors={['#275DC2', '#ffffff', '#ffffff']}
       style={{ flex: 1 }}
     >
-      <Text>Test com gradient</Text>
+      <FriendCard />
     </LinearGradient>
   );
 };
