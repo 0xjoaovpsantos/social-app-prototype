@@ -4,6 +4,8 @@ import { View } from 'react-native';
 
 import HeaderHome from '../../components/HeaderHome';
 
+import PostFeed from '../../components/PostFeed';
+
 const Home: React.FC = () => {
   return (
     <View
@@ -13,6 +15,9 @@ const Home: React.FC = () => {
       }}
     >
       <HeaderHome />
+      <PostFeed />
+      <PostFeed />
+      <PostFeed />
     </View>
   );
 };
