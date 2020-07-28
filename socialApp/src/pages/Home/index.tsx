@@ -2,17 +2,17 @@ import React from 'react';
 import LinearGradient from 'react-native-linear-gradient';
 import { View } from 'react-native';
 
-import ListFriendsStatus from '../../components/ListFriendsStatus';
+import HeaderHome from '../../components/HeaderHome';
 
 const Home: React.FC = () => {
   return (
     <View
       style={{
         flex: 1,
-        backgroundColor: '#F1F1F3',
+        backgroundColor: '#7159c1',
       }}
     >
-      <ListFriendsStatus />
+      <HeaderHome />
     </View>
   );
 };
