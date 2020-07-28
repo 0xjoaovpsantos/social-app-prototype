@@ -1,23 +1,25 @@
+/* eslint-disable import/order */
 import React from 'react';
 import LinearGradient from 'react-native-linear-gradient';
 import { View } from 'react-native';
 
 import HeaderHome from '../../components/HeaderHome';
 
-import PostFeed from '../../components/PostFeed';
+import Feed from '../../components/Feed';
+import { ScrollView } from 'react-native-gesture-handler';
 
 const Home: React.FC = () => {
   return (
     <View
       style={{
         flex: 1,
-        backgroundColor: '#7159c1',
+        backgroundColor: '#F1F1F3',
       }}
     >
-      <HeaderHome />
-      <PostFeed />
-      <PostFeed />
-      <PostFeed />
+      <ScrollView>
+        <HeaderHome />
+        <Feed />
+      </ScrollView>
     </View>
   );
 };
