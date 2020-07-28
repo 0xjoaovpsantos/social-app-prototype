@@ -4,9 +4,12 @@ import { View, ScrollView, StyleSheet } from 'react-native';
 
 import CircularFriendPhoto from '../CircularFriendPhoto';
 
+import IconAddStatus from '../IconAddStatus';
+
 const ListFriendStatus: React.FC = () => (
   <View>
     <ScrollView style={style.scroll} horizontal>
+      <IconAddStatus />
       <CircularFriendPhoto />
       <CircularFriendPhoto />
       <CircularFriendPhoto />
