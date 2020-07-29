@@ -1,10 +1,21 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { Text } from './styles';
+import { ScrollView } from 'react-native-gesture-handler';
+
+import CardFriends from '../../components/CardFriend';
 
 const ListFriends: React.FC = () => (
-  <View>
-    <Text>ListFriends page</Text>
-  </View>
+  <ScrollView>
+    <Text>Friends</Text>
+    <CardFriends />
+    <CardFriends />
+    <CardFriends />
+    <CardFriends />
+    <CardFriends />
+    <CardFriends />
+    <CardFriends />
+    <CardFriends />
+  </ScrollView>
 );
 
 export default ListFriends;
