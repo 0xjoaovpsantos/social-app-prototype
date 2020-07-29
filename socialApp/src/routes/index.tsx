@@ -4,7 +4,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 import Home from '../pages/Home';
 import Profile from '../pages/Profile';
-import FriendProfile from '../pages/FriendProfile';
+import ListFriends from '../pages/ListFriends';
 
 import Icon from 'react-native-vector-icons/Feather';
 import IconAntDesign from 'react-native-vector-icons/AntDesign';
@@ -23,7 +23,7 @@ const Routes: React.FC = () => (
     />
     <Tabs.Screen
       name="FriendProfile"
-      component={FriendProfile}
+      component={ListFriends}
       options={{
         tabBarIcon: () => (
           <IconMaterialIcons name="tag-faces" size={20} color="#364d6a" />
