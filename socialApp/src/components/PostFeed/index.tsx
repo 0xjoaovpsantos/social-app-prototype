@@ -30,7 +30,7 @@ const PostFeed: React.FC = () => (
         />
         <InfoUser>
           <Name>João</Name>
-          <PublicationTime>5 hours ago</PublicationTime>
+          <PublicationTime>10 hours ago</PublicationTime>
         </InfoUser>
       </View>
       <Icon name="more-horizontal" size={20} color="#7159c1" />

@@ -10,17 +10,19 @@ import { ScrollView } from 'react-native-gesture-handler';
 
 const Home: React.FC = () => {
   return (
-    <View
-      style={{
-        flex: 1,
-        backgroundColor: '#F1F1F3',
-      }}
-    >
-      <ScrollView>
-        <HeaderHome />
-        <Feed />
-      </ScrollView>
-    </View>
+    <>
+      <View
+        style={{
+          flex: 1,
+          backgroundColor: '#F1F1F3',
+        }}
+      >
+        <ScrollView>
+          <HeaderHome />
+          <Feed />
+        </ScrollView>
+      </View>
+    </>
   );
 };
 
