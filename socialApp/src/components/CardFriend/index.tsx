@@ -1,21 +1,32 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable global-require */
 import React from 'react';
 import { Image, TouchableHighlight } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { Container, Info, Name, Status } from './styles';
 
-const CardFriend: React.FC = () => {
+export interface CardFriendProps {
+  photoUrl: string;
+  userName: string;
+  status: string;
+}
+
+interface Props {
+  data: CardFriendProps;
+}
+
+const CardFriend: React.FC<Props> = ({ data }) => {
   const navigation = useNavigation();
   return (
     <TouchableHighlight onPress={() => navigation.navigate('Profile')}>
       <Container>
         <Image
           style={{ width: 80, height: 80 }}
-          source={require('../../assets/tom.jpeg')}
+          source={{ uri: data.photoUrl }}
         />
         <Info>
-          <Name>Joao</Name>
-          <Status>Visto pela ultima vez as 13:30</Status>
+          <Name>{data.userName}</Name>
+          <Status>{data.status}</Status>
         </Info>
       </Container>
     </TouchableHighlight>
