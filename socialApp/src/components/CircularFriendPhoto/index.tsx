@@ -3,7 +3,6 @@
 /* eslint-disable global-require */
 import React from 'react';
 import { Image } from 'react-native';
-
 import { Container, Name } from './styles';
 
 export interface ListStatusProps {
