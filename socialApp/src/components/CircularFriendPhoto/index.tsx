@@ -12,7 +12,11 @@ export interface ListStatusProps {
   userName: string;
 }
 
-const FriendCard: React.FC<ListStatusProps> = ({ photoUrl, userName }) => (
+interface Props {
+  data: ListStatusProps;
+}
+
+const FriendCard: React.FC<Props> = ({ data }) => (
   <Container>
     <Image
       style={{
@@ -21,9 +25,9 @@ const FriendCard: React.FC<ListStatusProps> = ({ photoUrl, userName }) => (
         resizeMode: 'stretch',
         borderRadius: 100,
       }}
-      source={{ uri: photoUrl }}
+      source={{ uri: data.photoUrl }}
     />
-    <Name>{userName}</Name>
+    <Name>{data.userName}</Name>
   </Container>
 );
 

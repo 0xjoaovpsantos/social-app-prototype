@@ -12,7 +12,7 @@ const ListFriendStatus: React.FC = () => {
   const [listStatus, setListStatus] = useState([] as ListStatusProps[]);
 
   async function getListStatus() {
-    const response = await api.get<ListStatus[]>('/status');
+    const response = await api.get<ListStatusProps[]>('/status');
     setListStatus(response.data);
   }
 
@@ -25,11 +25,7 @@ const ListFriendStatus: React.FC = () => {
       <ScrollView style={style.scroll} horizontal>
         <IconAddStatus />
         {listStatus.map(status => (
-          <CircularFriendPhoto
-            key={status.id}
-            photoUrl={status.photoUrl}
-            userName={status.userName}
-          />
+          <CircularFriendPhoto data={status} />
         ))}
       </ScrollView>
     </View>
