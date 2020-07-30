@@ -2,9 +2,9 @@
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable react/prop-types */
 import React, { useState, useEffect } from 'react';
-import { ScrollView } from 'react-native-gesture-handler';
-
 import { RouteProp } from '@react-navigation/native';
+import { ScrollView } from 'react-native-gesture-handler';
+import Spinner from '../../components/Spinner';
 
 import { RootStackParamList } from './../../routes';
 
@@ -30,17 +30,22 @@ type InfoProfileProps = HeaderProfileProps & GalleryImagesProps;
 const Profile: React.FC<Props> = ({ route }) => {
   const { id } = route.params;
   const [profile, setProfile] = useState({} as InfoProfileProps);
+  const [loading, setLoading] = useState(true);
 
   async function getProfile() {
     const response = await api.get<InfoProfileProps>(`/profile/${id}`);
     setProfile(response.data);
+    setLoading(false);
   }
 
   useEffect(() => {
+    setLoading(true);
     getProfile();
   }, [id]);
 
-  return (
+  return loading || id !== profile.id ? (
+    <Spinner />
+  ) : (
     <Container>
       <ScrollView>
         <HeaderProfile data={profile} />
