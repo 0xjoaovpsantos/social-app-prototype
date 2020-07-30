@@ -1,13 +1,10 @@
 /* eslint-disable no-use-before-define */
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
-
+import { View, StyleSheet } from 'react-native';
 import Icon from 'react-native-vector-icons/AntDesign';
 import AppColors from '../../utils/colors';
-
 import ListFriendsStatus from '../ListFriendsStatus';
-
-import { Title } from './style';
+import { Header, Title } from './style';
 
 const HeaderHome: React.FC = () => (
   <View
@@ -17,7 +14,7 @@ const HeaderHome: React.FC = () => (
       borderBottomRightRadius: 32,
     }}
   >
-    <View style={style.header}>
+    <Header>
       <Title>Feed</Title>
       <View style={style.icons}>
         <Icon
@@ -28,18 +25,12 @@ const HeaderHome: React.FC = () => (
         />
         <Icon name="message1" size={28} color={AppColors.secondColor} />
       </View>
-    </View>
+    </Header>
     <ListFriendsStatus />
   </View>
 );
 
 const style = StyleSheet.create({
-  header: {
-    flexDirection: 'row',
-    padding: 20,
-    justifyContent: 'space-between',
-    alignItems: 'center',
-  },
   icons: {
     flexDirection: 'row',
   },
