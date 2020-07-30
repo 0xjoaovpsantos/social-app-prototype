@@ -91,21 +91,25 @@
 
   "friends": [
     {
+      "id": 1,
       "photoUrl": "https://raw.githubusercontent.com/joaovictorpsantos/react-native-test/master/socialApp/src/assets/anne.jpeg",
       "userName": "Anne",
       "status": "Last seen 20 minutos ago"
     },
     {
+      "id": 2,
       "photoUrl": "https://raw.githubusercontent.com/joaovictorpsantos/react-native-test/master/socialApp/src/assets/mary.jpeg",
       "userName": "Mary",
       "status": "Last seen 50 minutos ago"
     },
     {
+      "id": 3,
       "photoUrl": "https://raw.githubusercontent.com/joaovictorpsantos/react-native-test/master/socialApp/src/assets/max.jpeg",
       "userName": "Max",
       "status": "Last seen 1 hour ago"
     },
     {
+      "id": 4,
       "photoUrl": "https://raw.githubusercontent.com/joaovictorpsantos/react-native-test/master/socialApp/src/assets/tom.jpeg",
       "userName": "Tom",
       "status": "Last seen 2 hours ago"
@@ -113,13 +117,13 @@
   ],
   "profile": [
     {
-      "user_id": 1,
+      "id": 1,
       "userPhoto": "https://raw.githubusercontent.com/joaovictorpsantos/react-native-test/master/socialApp/src/assets/anne.jpeg",
-      "user_name": "Anne",
-      "user_email": "anne@email.com",
+      "userName": "Anne",
+      "userEmail": "anne@email.com",
       "following": 245,
       "followers": 1358,
-      "number_photos": 7,
+      "numberPhotos": 7,
       "gallery": [
         {
           "url": "https://images.unsplash.com/photo-1519046904884-53103b34b206?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
@@ -145,13 +149,13 @@
       ]
     },
     {
-      "user_id": 2,
+      "id": 2,
       "userPhoto": "https://raw.githubusercontent.com/joaovictorpsantos/react-native-test/master/socialApp/src/assets/mary.jpeg",
-      "user_name": "Mary",
-      "user_email": "max@email.com",
+      "userName": "Mary",
+      "userEmail": "max@email.com",
       "following": 673,
       "followers": 287,
-      "number_photos": 14,
+      "numberPhotos": 14,
       "gallery": [
         {
           "url": "https://images.unsplash.com/photo-1519046904884-53103b34b206?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
@@ -198,13 +202,13 @@
       ]
     },
     {
-      "user_id": 3,
+      "id": 3,
       "userPhoto": "https://raw.githubusercontent.com/joaovictorpsantos/react-native-test/master/socialApp/src/assets/max.jpeg",
-      "user_name": "Max",
-      "user_email": "max@email.com",
+      "userName": "Max",
+      "userEmail": "max@email.com",
       "following": 1826,
       "followers": 2718,
-      "number_photos": 21,
+      "numberPhotos": 21,
       "gallery": [
         {
           "url": "https://images.unsplash.com/photo-1519046904884-53103b34b206?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
@@ -272,13 +276,13 @@
       ]
     },
     {
-      "user_id": 4,
+      "id": 4,
       "userPhoto": "https://raw.githubusercontent.com/joaovictorpsantos/react-native-test/master/socialApp/src/assets/tom.jpeg",
-      "user_name": "Tom",
-      "user_email": "tom@email.com",
+      "userName": "Tom",
+      "userEmail": "tom@email.com",
       "following": 2715,
       "followers": 2816,
-      "number_photos": 5,
+      "numberPhotos": 5,
       "gallery": [
         {
           "url": "https://images.unsplash.com/photo-1519046904884-53103b34b206?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"

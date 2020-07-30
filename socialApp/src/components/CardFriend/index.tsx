@@ -6,6 +6,7 @@ import { useNavigation } from '@react-navigation/native';
 import { Container, Info, Name, Status } from './styles';
 
 export interface CardFriendProps {
+  id: number;
   photoUrl: string;
   userName: string;
   status: string;
@@ -18,7 +19,13 @@ interface Props {
 const CardFriend: React.FC<Props> = ({ data }) => {
   const navigation = useNavigation();
   return (
-    <TouchableHighlight onPress={() => navigation.navigate('Profile')}>
+    <TouchableHighlight
+      onPress={() =>
+        navigation.navigate('Profile', {
+          id: data.id,
+        })
+      }
+    >
       <Container>
         <Image
           style={{ width: 80, height: 80 }}

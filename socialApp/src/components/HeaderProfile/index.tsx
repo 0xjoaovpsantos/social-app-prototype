@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable global-require */
 import React from 'react';
 import { Image } from 'react-native';
@@ -13,31 +14,45 @@ import {
   Description,
 } from './styles';
 
-const HeaderProfile: React.FC = () => {
+export interface HeaderProfileProps {
+  id: number;
+  userPhoto: string;
+  userName: string;
+  userEmail: string;
+  following: number;
+  followers: number;
+  numberPhotos: string;
+}
+
+interface Props {
+  data: HeaderProfileProps;
+}
+
+const HeaderProfile: React.FC<Props> = ({ data }) => {
   return (
     <Container>
       <Header>
         <Image
           style={{ width: 80, height: 80 }}
-          source={require('../../assets/tom.jpeg')}
+          source={{ uri: data.userPhoto }}
         />
         <InfoPeople>
-          <Name>Joao</Name>
-          <Email>joao@joao.joao</Email>
+          <Name>{data.userName}</Name>
+          <Email>{data.userEmail}</Email>
         </InfoPeople>
       </Header>
       <SocialInfos>
         <Stats>
-          <Number>245</Number>
+          <Number>{data.following}</Number>
           <Description>Following</Description>
         </Stats>
         <Stats>
-          <Number>1358</Number>
+          <Number>{data.followers}</Number>
           <Description>Followers</Description>
         </Stats>
         <Stats>
-          <Number>82</Number>
-          <Description>Shots</Description>
+          <Number>{data.numberPhotos}</Number>
+          <Description>Photos</Description>
         </Stats>
       </SocialInfos>
     </Container>

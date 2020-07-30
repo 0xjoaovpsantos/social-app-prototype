@@ -21,7 +21,7 @@ const ListFriends: React.FC = () => {
     <ScrollView>
       <Text>Friends</Text>
       {cardFriend.map(card => (
-        <CardFriends data={card} />
+        <CardFriends key={card.id} data={card} />
       ))}
     </ScrollView>
   );

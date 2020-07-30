@@ -2,15 +2,21 @@ import React from 'react';
 import { Text } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-import Home from '../pages/Home';
-import Profile from '../pages/Profile';
-import ListFriends from '../pages/ListFriends';
-
 import Icon from 'react-native-vector-icons/Feather';
 import IconAntDesign from 'react-native-vector-icons/AntDesign';
 import IconMaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
-const Tabs = createBottomTabNavigator();
+import Home from '../pages/Home';
+import Profile from '../pages/Profile';
+import ListFriends from '../pages/ListFriends';
+
+export type RootStackParamList = {
+  Home: undefined;
+  ListFriends: undefined;
+  Profile: { id: number };
+};
+
+const Tabs = createBottomTabNavigator<RootStackParamList>();
 
 const Routes: React.FC = () => (
   <Tabs.Navigator>
@@ -22,7 +28,7 @@ const Routes: React.FC = () => (
       }}
     />
     <Tabs.Screen
-      name="FriendProfile"
+      name="ListFriends"
       component={ListFriends}
       options={{
         tabBarIcon: () => (
@@ -38,6 +44,7 @@ const Routes: React.FC = () => (
           <IconAntDesign name="profile" size={20} color="#364d6a" />
         ),
       }}
+      initialParams={{ id: 4 }}
     />
   </Tabs.Navigator>
 );
