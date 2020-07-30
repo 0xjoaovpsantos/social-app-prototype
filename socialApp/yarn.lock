@@ -6612,6 +6612,11 @@ react-native-screens@^2.9.0:
   resolved "https://registry.yarnpkg.com/react-native-screens/-/react-native-screens-2.9.0.tgz#ead2843107ba00fee259aa377582e457c74f1f3b"
   integrity sha512-5MaiUD6HA3nzY3JbVI8l3V7pKedtxQF3d8qktTVI0WmWXTI4QzqOU8r8fPVvfKo3MhOXwhWBjr+kQ7DZaIQQeg==
 
+react-native-shimmer-placeholder@^1.0.36:
+  version "1.0.36"
+  resolved "https://registry.yarnpkg.com/react-native-shimmer-placeholder/-/react-native-shimmer-placeholder-1.0.36.tgz#b24ba4afa95f4861fa8dd8262fe0a50ebba2d883"
+  integrity sha512-GUFvCwXqiOkzK7PdzQVo9TNzh4dQT9sj+xvJu/8X3yU1S3GkKK1/SVQXpoNwdFZz2lfHJ5FWzoQDxd+3TDQODA==
+
 react-native-vector-icons@^7.0.0:
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/react-native-vector-icons/-/react-native-vector-icons-7.0.0.tgz#5b92ed363c867645daad48c559e1f99efcfbb813"
