@@ -1,7 +1,8 @@
+/* eslint-disable global-require */
 import React from 'react';
 import { Image, TouchableHighlight } from 'react-native';
-import { Container, Info, Name, Status } from './styles';
 import { useNavigation } from '@react-navigation/native';
+import { Container, Info, Name, Status } from './styles';
 
 const CardFriend: React.FC = () => {
   const navigation = useNavigation();
@@ -10,7 +11,7 @@ const CardFriend: React.FC = () => {
       <Container>
         <Image
           style={{ width: 80, height: 80 }}
-          source={require('../../assets/james.jpeg')}
+          source={require('../../assets/tom.jpeg')}
         />
         <Info>
           <Name>Joao</Name>

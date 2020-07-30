@@ -1,3 +1,4 @@
+/* eslint-disable global-require */
 import React from 'react';
 import { Image } from 'react-native';
 import {
@@ -18,7 +19,7 @@ const HeaderProfile: React.FC = () => {
       <Header>
         <Image
           style={{ width: 80, height: 80 }}
-          source={require('../../assets/james.jpeg')}
+          source={require('../../assets/tom.jpeg')}
         />
         <InfoPeople>
           <Name>Joao</Name>

@@ -1,10 +1,18 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable import/no-dynamic-require */
 /* eslint-disable global-require */
 import React from 'react';
 import { Image } from 'react-native';
 
 import { Container, Name } from './styles';
 
-const FriendCard: React.FC = () => (
+export interface ListStatus {
+  id?: number;
+  photoUrl: string;
+  userName: string;
+}
+
+const FriendCard: React.FC<ListStatus> = ({ photoUrl, userName }) => (
   <Container>
     <Image
       style={{
@@ -13,9 +21,9 @@ const FriendCard: React.FC = () => (
         resizeMode: 'stretch',
         borderRadius: 100,
       }}
-      source={require('../../assets/james.jpeg')}
+      source={{ uri: photoUrl }}
     />
-    <Name>João</Name>
+    <Name>{userName}</Name>
   </Container>
 );
 

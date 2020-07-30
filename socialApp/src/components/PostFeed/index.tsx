@@ -26,7 +26,7 @@ const PostFeed: React.FC = () => (
             resizeMode: 'stretch',
             borderRadius: 100,
           }}
-          source={require('../../assets/james.jpeg')}
+          source={require('../../assets/tom.jpeg')}
         />
         <InfoUser>
           <Name>João</Name>

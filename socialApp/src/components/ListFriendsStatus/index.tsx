@@ -1,26 +1,40 @@
 /* eslint-disable no-use-before-define */
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { View, ScrollView, StyleSheet } from 'react-native';
 
-import CircularFriendPhoto from '../CircularFriendPhoto';
+import CircularFriendPhoto, { ListStatus } from '../CircularFriendPhoto';
 
 import IconAddStatus from '../IconAddStatus';
 
-const ListFriendStatus: React.FC = () => (
-  <View>
-    <ScrollView style={style.scroll} horizontal>
-      <IconAddStatus />
-      <CircularFriendPhoto />
-      <CircularFriendPhoto />
-      <CircularFriendPhoto />
-      <CircularFriendPhoto />
-      <CircularFriendPhoto />
-      <CircularFriendPhoto />
-      <CircularFriendPhoto />
-      <CircularFriendPhoto />
-    </ScrollView>
-  </View>
-);
+import api from '../../services/api';
+
+const ListFriendStatus: React.FC = () => {
+  const [listStatus, setListStatus] = useState([] as ListStatus[]);
+
+  async function getListStatus() {
+    const response = await api.get<ListStatus[]>('/status');
+    setListStatus(response.data);
+  }
+
+  useEffect(() => {
+    getListStatus();
+  }, []);
+
+  return (
+    <View>
+      <ScrollView style={style.scroll} horizontal>
+        <IconAddStatus />
+        {listStatus.map(status => (
+          <CircularFriendPhoto
+            key={status.id}
+            photoUrl={status.photoUrl}
+            userName={status.userName}
+          />
+        ))}
+      </ScrollView>
+    </View>
+  );
+};
 const style = StyleSheet.create({
   scroll: {
     padding: 20,
