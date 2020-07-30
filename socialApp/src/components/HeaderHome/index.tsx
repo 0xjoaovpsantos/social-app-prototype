@@ -3,6 +3,7 @@ import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
 import Icon from 'react-native-vector-icons/AntDesign';
+import AppColors from '../../utils/colors';
 
 import ListFriendsStatus from '../ListFriendsStatus';
 
@@ -11,7 +12,7 @@ import { Title } from './style';
 const HeaderHome: React.FC = () => (
   <View
     style={{
-      backgroundColor: '#ffffff',
+      backgroundColor: AppColors.primaryColor,
       borderBottomLeftRadius: 32,
       borderBottomRightRadius: 32,
     }}
@@ -23,9 +24,9 @@ const HeaderHome: React.FC = () => (
           name="search1"
           size={28}
           style={{ marginRight: 20 }}
-          color="#364d6a"
+          color={AppColors.secondColor}
         />
-        <Icon name="message1" size={28} color="#364d6a" />
+        <Icon name="message1" size={28} color={AppColors.secondColor} />
       </View>
     </View>
     <ListFriendsStatus />

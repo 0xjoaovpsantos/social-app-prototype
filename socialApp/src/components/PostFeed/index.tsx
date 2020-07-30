@@ -15,6 +15,7 @@ import {
 } from './style';
 import Icon from 'react-native-vector-icons/Feather';
 import IconAntDesign from 'react-native-vector-icons/AntDesign';
+import AppColors from '../../utils/colors';
 
 export interface PostFeedProps {
   userPhoto: string;
@@ -48,7 +49,7 @@ const PostFeed: React.FC<Props> = ({ data }) => (
           <PublicationTime>{data.publicationTime}</PublicationTime>
         </InfoUser>
       </View>
-      <Icon name="more-horizontal" size={20} color="#7159c1" />
+      <Icon name="more-horizontal" size={20} color={AppColors.secondColor} />
     </Header>
     <Body>
       <Image
@@ -66,7 +67,7 @@ const PostFeed: React.FC<Props> = ({ data }) => (
           name="eye"
           size={20}
           style={{ marginRight: 10 }}
-          color="#7159c1"
+          color={AppColors.secondColor}
         />
         <Number>{data.numberViews}</Number>
       </View>
@@ -75,14 +76,14 @@ const PostFeed: React.FC<Props> = ({ data }) => (
           name="heart"
           style={{ marginRight: 10 }}
           size={20}
-          color="#7159c1"
+          color={AppColors.secondColor}
         />
         <Number>{data.numberLikes}</Number>
         <IconAntDesign
           name="message1"
           style={{ marginLeft: 20, marginRight: 10 }}
           size={20}
-          color="#7159c1"
+          color={AppColors.secondColor}
         />
         <Number>{data.numberComments}</Number>
       </View>

@@ -1,7 +1,8 @@
 import styled from 'styled-components/native';
+import AppColors from '../../utils/colors';
 
 export const Title = styled.Text`
-  color: #364d6a;
+  color: ${AppColors.secondColor};
   font-weight: bold;
   font-size: 32px;
 `;

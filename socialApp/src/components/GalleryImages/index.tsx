@@ -3,6 +3,7 @@
 import React from 'react';
 import { View, Image, StyleSheet, Dimensions, FlatList } from 'react-native';
 import { Text } from './styles';
+import AppColors from '../../utils/colors';
 
 interface GalleryUrlProps {
   url: string;
@@ -45,7 +46,7 @@ const styles = StyleSheet.create({
     margin: 20,
     padding: 10,
     borderRadius: 10,
-    backgroundColor: '#ffffff',
+    backgroundColor: AppColors.primaryColor,
   },
   itemImage: {
     width: itemWidth,

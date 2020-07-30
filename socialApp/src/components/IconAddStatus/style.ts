@@ -1,4 +1,5 @@
 import styled from 'styled-components/native';
+import AppColors from '../../utils/colors';
 
 export const Container = styled.View`
   width: 80px;
@@ -11,6 +12,6 @@ export const Container = styled.View`
 `;
 
 export const Text = styled.Text`
-  color: #364d6a;
+  color: ${AppColors.secondColor};
   font-size: 40px;
 `;

@@ -9,6 +9,7 @@ import IconMaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import Home from '../pages/Home';
 import Profile from '../pages/Profile';
 import ListFriends from '../pages/ListFriends';
+import AppColors from '../utils/colors';
 
 export type RootStackParamList = {
   Home: undefined;
@@ -24,7 +25,9 @@ const Routes: React.FC = () => (
       name="Home"
       component={Home}
       options={{
-        tabBarIcon: () => <Icon name="home" size={20} color="#364d6a" />,
+        tabBarIcon: () => (
+          <Icon name="home" size={20} color={AppColors.secondColor} />
+        ),
       }}
     />
     <Tabs.Screen
@@ -32,7 +35,11 @@ const Routes: React.FC = () => (
       component={ListFriends}
       options={{
         tabBarIcon: () => (
-          <IconMaterialIcons name="tag-faces" size={20} color="#364d6a" />
+          <IconMaterialIcons
+            name="tag-faces"
+            size={20}
+            color={AppColors.secondColor}
+          />
         ),
       }}
     />
@@ -41,7 +48,11 @@ const Routes: React.FC = () => (
       component={Profile}
       options={{
         tabBarIcon: () => (
-          <IconAntDesign name="profile" size={20} color="#364d6a" />
+          <IconAntDesign
+            name="profile"
+            size={20}
+            color={AppColors.secondColor}
+          />
         ),
       }}
       initialParams={{ id: 4 }}

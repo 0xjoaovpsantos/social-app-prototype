@@ -1,8 +1,9 @@
 import styled from 'styled-components/native';
+import AppColors from '../../utils/colors';
 
 export const Container = styled.View`
   margin: 20px;
-  background-color: #ffffff;
+  background-color: ${AppColors.primaryColor};
   border-radius: 10px;
 `;
 

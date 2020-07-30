@@ -1,7 +1,7 @@
 /* eslint-disable no-use-before-define */
 import React, { useState, useEffect } from 'react';
 import { View, ScrollView, StyleSheet } from 'react-native';
-
+import AppColors from '../../utils/colors';
 import CircularFriendPhoto, { ListStatusProps } from '../CircularFriendPhoto';
 
 import IconAddStatus from '../IconAddStatus';
@@ -34,7 +34,7 @@ const ListFriendStatus: React.FC = () => {
 const style = StyleSheet.create({
   scroll: {
     padding: 20,
-    backgroundColor: '#ffffff',
+    backgroundColor: AppColors.primaryColor,
     borderBottomLeftRadius: 32,
     borderBottomRightRadius: 32,
   },

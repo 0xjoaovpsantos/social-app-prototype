@@ -1,7 +1,8 @@
 import styled from 'styled-components/native';
+import AppColors from '../../utils/colors';
 
 export const Container = styled.View`
-  background-color: #ffffff;
+  background-color: ${AppColors.primaryColor};
   margin: 20px;
   padding: 10px;
   border-radius: 10px;
@@ -17,13 +18,13 @@ export const InfoPeople = styled.View`
 `;
 
 export const Name = styled.Text`
-  color: #364d6a;
+  color: ${AppColors.secondColor};
   font-weight: bold;
   font-size: 24px;
 `;
 
 export const Email = styled.Text`
-  color: #364d6a;
+  color: ${AppColors.secondColor};
   font-size: 16px;
 `;
 
@@ -41,12 +42,12 @@ export const Stats = styled.View`
 `;
 
 export const Number = styled.Text`
-  color: #364d6a;
+  color: ${AppColors.secondColor};
   font-weight: bold;
   font-size: 24px;
 `;
 
 export const Description = styled.Text`
-  color: #364d6a;
+  color: ${AppColors.secondColor};
   font-size: 16px;
 `;
