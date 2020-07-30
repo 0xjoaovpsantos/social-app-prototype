@@ -2,8 +2,7 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import { View, Image, StyleSheet, Dimensions, FlatList } from 'react-native';
-import { Text } from './styles';
-import AppColors from '../../utils/colors';
+import { Container, Text } from './styles';
 
 interface GalleryUrlProps {
   url: string;
@@ -24,7 +23,7 @@ const itemWidth = (width - 62) / numberGrid;
 
 const GalleryImages: React.FC<Props> = ({ data }) => {
   return (
-    <View style={styles.container}>
+    <Container>
       <Text> My Gallery</Text>
       <FlatList
         data={data.gallery}
@@ -37,17 +36,11 @@ const GalleryImages: React.FC<Props> = ({ data }) => {
           </View>
         )}
       />
-    </View>
+    </Container>
   );
 };
 
 const styles = StyleSheet.create({
-  container: {
-    margin: 20,
-    padding: 10,
-    borderRadius: 10,
-    backgroundColor: AppColors.primaryColor,
-  },
   itemImage: {
     width: itemWidth,
     height: itemWidth,
