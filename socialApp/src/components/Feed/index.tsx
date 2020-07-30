@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { View } from 'react-native';
-
 import PostFeed, { PostFeedProps } from '../PostFeed';
-
 import api from '../../services/api';
 
 const Feed: React.FC = () => {
