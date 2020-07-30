@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable import/order */
 /* eslint-disable global-require */
 import React from 'react';
@@ -15,7 +16,21 @@ import {
 import Icon from 'react-native-vector-icons/Feather';
 import IconAntDesign from 'react-native-vector-icons/AntDesign';
 
-const PostFeed: React.FC = () => (
+export interface PostFeedProps {
+  userPhoto: string;
+  userName: string;
+  publicationTime: string;
+  photoUrl: string;
+  numberViews: number;
+  numberLikes: number;
+  numberComments: number;
+}
+
+interface Props {
+  data: PostFeedProps;
+}
+
+const PostFeed: React.FC<Props> = ({ data }) => (
   <Container>
     <Header>
       <View style={{ flexDirection: 'row' }}>
@@ -26,11 +41,11 @@ const PostFeed: React.FC = () => (
             resizeMode: 'stretch',
             borderRadius: 100,
           }}
-          source={require('../../assets/tom.jpeg')}
+          source={{ uri: data.userPhoto }}
         />
         <InfoUser>
-          <Name>João</Name>
-          <PublicationTime>10 hours ago</PublicationTime>
+          <Name>{data.userName}</Name>
+          <PublicationTime>{data.publicationTime}</PublicationTime>
         </InfoUser>
       </View>
       <Icon name="more-horizontal" size={20} color="#7159c1" />
@@ -42,7 +57,7 @@ const PostFeed: React.FC = () => (
           width: undefined,
           height: undefined,
         }}
-        source={require('../../assets/space1.jpg')}
+        source={{ uri: data.photoUrl }}
       />
     </Body>
     <Footer>
@@ -53,7 +68,7 @@ const PostFeed: React.FC = () => (
           style={{ marginRight: 10 }}
           color="#7159c1"
         />
-        <Number>321</Number>
+        <Number>{data.numberViews}</Number>
       </View>
       <View style={{ flexDirection: 'row' }}>
         <IconAntDesign
@@ -62,14 +77,14 @@ const PostFeed: React.FC = () => (
           size={20}
           color="#7159c1"
         />
-        <Number>101</Number>
+        <Number>{data.numberLikes}</Number>
         <IconAntDesign
           name="message1"
           style={{ marginLeft: 20, marginRight: 10 }}
           size={20}
           color="#7159c1"
         />
-        <Number>55</Number>
+        <Number>{data.numberComments}</Number>
       </View>
     </Footer>
   </Container>

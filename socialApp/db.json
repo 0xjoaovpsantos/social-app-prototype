@@ -43,49 +43,49 @@
   ],
   "feed": [
     {
-      "user_photo": "https://raw.githubusercontent.com/joaovictorpsantos/react-native-test/master/socialApp/src/assets/tom.jpeg",
+      "userPhoto": "https://raw.githubusercontent.com/joaovictorpsantos/react-native-test/master/socialApp/src/assets/tom.jpeg",
       "userName": "Tom",
-      "publication_time": "2 hours ago",
+      "publicationTime": "2 hours ago",
       "photoUrl": "https://images.unsplash.com/photo-1596005935874-c57d5739cf5d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-      "number_views": 321,
-      "number_likes": 101,
-      "number_comments": 55
+      "numberViews": 321,
+      "numberLikes": 101,
+      "numberComments": 55
     },
     {
-      "user_photo": "marry.jpeg",
+      "userPhoto": "https://raw.githubusercontent.com/joaovictorpsantos/react-native-test/master/socialApp/src/assets/mary.jpeg",
       "userName": "Marry",
-      "publication_time": "4 hours ago",
+      "publicationTime": "4 hours ago",
       "photoUrl": "https://images.unsplash.com/photo-1595923941716-39a9c58a9661?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-      "number_views": 300,
-      "number_likes": 80,
-      "number_comments": 20
+      "numberViews": 300,
+      "numberLikes": 80,
+      "numberComments": 20
     },
     {
-      "user_photo": "https://raw.githubusercontent.com/joaovictorpsantos/react-native-test/master/socialApp/src/assets/anne.jpeg",
+      "userPhoto": "https://raw.githubusercontent.com/joaovictorpsantos/react-native-test/master/socialApp/src/assets/anne.jpeg",
       "userName": "Anne",
-      "publication_time": "5 hours ago",
+      "publicationTime": "5 hours ago",
       "photoUrl": "https://images.unsplash.com/photo-1595910462158-58044a4b7d73?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-      "number_views": 486,
-      "number_likes": 231,
-      "number_comments": 92
+      "numberViews": 486,
+      "numberLikes": 231,
+      "numberComments": 92
     },
     {
-      "user_photo": "https://raw.githubusercontent.com/joaovictorpsantos/react-native-test/master/socialApp/src/assets/max.jpeg",
+      "userPhoto": "https://raw.githubusercontent.com/joaovictorpsantos/react-native-test/master/socialApp/src/assets/max.jpeg",
       "userName": "Max",
-      "publication_time": "8 hours ago",
+      "publicationTime": "8 hours ago",
       "photoUrl": "https://images.unsplash.com/photo-1595946287576-f2ac963a69d3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-      "number_views": 321,
-      "number_likes": 101,
-      "number_comments": 55
+      "numberViews": 321,
+      "numberLikes": 101,
+      "numberComments": 55
     },
     {
-      "user_photo": "https://raw.githubusercontent.com/joaovictorpsantos/react-native-test/master/socialApp/src/assets/tom.jpeg",
+      "userPhoto": "https://raw.githubusercontent.com/joaovictorpsantos/react-native-test/master/socialApp/src/assets/tom.jpeg",
       "userName": "Tom",
-      "publication_time": "2 hours ago",
+      "publicationTime": "2 hours ago",
       "photoUrl": "https://images.unsplash.com/photo-1596005935874-c57d5739cf5d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-      "number_views": 321,
-      "number_likes": 101,
-      "number_comments": 55
+      "numberViews": 321,
+      "numberLikes": 101,
+      "numberComments": 55
     }
   ],
 
@@ -114,7 +114,7 @@
   "profile": [
     {
       "user_id": 1,
-      "user_photo": "https://raw.githubusercontent.com/joaovictorpsantos/react-native-test/master/socialApp/src/assets/anne.jpeg",
+      "userPhoto": "https://raw.githubusercontent.com/joaovictorpsantos/react-native-test/master/socialApp/src/assets/anne.jpeg",
       "user_name": "Anne",
       "user_email": "anne@email.com",
       "following": 245,
@@ -146,7 +146,7 @@
     },
     {
       "user_id": 2,
-      "user_photo": "https://raw.githubusercontent.com/joaovictorpsantos/react-native-test/master/socialApp/src/assets/mary.jpeg",
+      "userPhoto": "https://raw.githubusercontent.com/joaovictorpsantos/react-native-test/master/socialApp/src/assets/mary.jpeg",
       "user_name": "Mary",
       "user_email": "max@email.com",
       "following": 673,
@@ -199,7 +199,7 @@
     },
     {
       "user_id": 3,
-      "user_photo": "https://raw.githubusercontent.com/joaovictorpsantos/react-native-test/master/socialApp/src/assets/max.jpeg",
+      "userPhoto": "https://raw.githubusercontent.com/joaovictorpsantos/react-native-test/master/socialApp/src/assets/max.jpeg",
       "user_name": "Max",
       "user_email": "max@email.com",
       "following": 1826,
@@ -273,7 +273,7 @@
     },
     {
       "user_id": 4,
-      "user_photo": "https://raw.githubusercontent.com/joaovictorpsantos/react-native-test/master/socialApp/src/assets/tom.jpeg",
+      "userPhoto": "https://raw.githubusercontent.com/joaovictorpsantos/react-native-test/master/socialApp/src/assets/tom.jpeg",
       "user_name": "Tom",
       "user_email": "tom@email.com",
       "following": 2715,

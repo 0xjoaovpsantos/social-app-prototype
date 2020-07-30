@@ -6,13 +6,13 @@ import { Image } from 'react-native';
 
 import { Container, Name } from './styles';
 
-export interface ListStatus {
+export interface ListStatusProps {
   id?: number;
   photoUrl: string;
   userName: string;
 }
 
-const FriendCard: React.FC<ListStatus> = ({ photoUrl, userName }) => (
+const FriendCard: React.FC<ListStatusProps> = ({ photoUrl, userName }) => (
   <Container>
     <Image
       style={{

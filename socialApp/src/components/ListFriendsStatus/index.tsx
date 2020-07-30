@@ -2,14 +2,14 @@
 import React, { useState, useEffect } from 'react';
 import { View, ScrollView, StyleSheet } from 'react-native';
 
-import CircularFriendPhoto, { ListStatus } from '../CircularFriendPhoto';
+import CircularFriendPhoto, { ListStatusProps } from '../CircularFriendPhoto';
 
 import IconAddStatus from '../IconAddStatus';
 
 import api from '../../services/api';
 
 const ListFriendStatus: React.FC = () => {
-  const [listStatus, setListStatus] = useState([] as ListStatus[]);
+  const [listStatus, setListStatus] = useState([] as ListStatusProps[]);
 
   async function getListStatus() {
     const response = await api.get<ListStatus[]>('/status');
