@@ -55,6 +55,7 @@ The app-inspired layout was made based on [this design](https://dribbble.com/sho
 
 ## 👀 Tools used to standardize the code:
 
+- Conventional Commits
 - ESLint
 - Prettier
 - EditorConfig
