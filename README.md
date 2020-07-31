@@ -53,6 +53,12 @@ The app-inspired layout was made based on [this design](https://dribbble.com/sho
 - Hooks
 - JSON Server
 
+## 👀 Tools used to standardize the code:
+
+- ESLint
+- Prettier
+- EditorConfig
+
 # :construction_worker: Installation
 
 **You need to install [Node.js](https://nodejs.org/en/download/), [Yarn](https://yarnpkg.com/), [Android SDK](https://medium.com/surabayadev/setting-up-react-native-android-without-android-studio-35a496e1dfa3) first and then, in order to clone the project via HTTPS, run this command:**
