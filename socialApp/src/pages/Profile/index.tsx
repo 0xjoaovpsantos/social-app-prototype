@@ -2,6 +2,7 @@
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable react/prop-types */
 import React, { useState, useEffect } from 'react';
+import { YellowBox } from 'react-native';
 import { RouteProp } from '@react-navigation/native';
 import { ScrollView } from 'react-native-gesture-handler';
 import Spinner from '../../components/Spinner';
@@ -26,6 +27,8 @@ type Props = {
 };
 
 type InfoProfileProps = HeaderProfileProps & GalleryImagesProps;
+
+YellowBox.ignoreWarnings(['']);
 
 const Profile: React.FC<Props> = ({ route }) => {
   const { id } = route.params;

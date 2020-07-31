@@ -6,5 +6,5 @@ export const Text = styled.Text`
   margin-left: 20px;
   font-size: 24px;
   font-weight: bold;
-  color: ${AppColors};
+  color: ${AppColors.secondColor};
 `;
