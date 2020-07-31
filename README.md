@@ -43,7 +43,7 @@
 ## 💡 About the project:
 
 The project is about a social network prototype that contains the friends status list, the publications feed, friends list and profile page. 
-The app-inspired layout was made based on [this design](https://dribbble.com/shots/6344361-Social-App/attachments)
+The app-inspired layout was made based on [this design](https://dribbble.com/shots/6344361-Social-App/attachments).
 
 ## 🔥 Techs:
 
