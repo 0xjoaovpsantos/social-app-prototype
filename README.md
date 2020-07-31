@@ -42,7 +42,7 @@
 
 ## 💡 About the project:
 
-The project is about a social network prototype that contains the friends status list, the publications feed, friends list and profile page. 
+The project is about a social network prototype that contains the friends status list, the publications feed, friends list and profile page.
 The app-inspired layout was made based on [this design](https://dribbble.com/shots/6344361-Social-App/attachments).
 
 ## 🔥 Techs:
@@ -57,34 +57,36 @@ The app-inspired layout was made based on [this design](https://dribbble.com/sho
 
 **You need to install [Node.js](https://nodejs.org/en/download/), [Yarn](https://yarnpkg.com/), [Android SDK](https://medium.com/surabayadev/setting-up-react-native-android-without-android-studio-35a496e1dfa3) first and then, in order to clone the project via HTTPS, run this command:**
 
-```git clone https://github.com/joaovictorpsantos/social-app.git```
+`git clone https://github.com/joaovictorpsantos/social-app.git`
 
 SSH URLs provide access to a Git repository via SSH, a secure protocol. If you have a SSH key registered in your Github account, clone the project using this command:
 
-```git clone git@github.com:joaovictorpsantos/social-app.git```
+`git clone git@github.com:joaovictorpsantos/social-app.git`
 
 **Install dependencies**
 
-```yarn install```
+`yarn install`
 
 **Install IOS native dependencies**
 
-```cd ios && pod install```
+`cd ios && pod install`
 
 # :runner: Getting Started
 
 Before running the app, remember to start the local server with json-server
 
-``npx json-server --watch db.json``
+`npx json-server --watch db.json`
+
+Make sure you have the emulator on or a physical device connected
 
 Run the following command in order to start the application in a development environment:
 
 ```
   // Install the application in a Android device
-  yarn react-native run-android
+  yarn android
 
   // Install the application in a IOS device
-  yarn react-native run-android
+  yarn ios
 ```
 
 After the build process, the metro bundler will start the app automatically but
