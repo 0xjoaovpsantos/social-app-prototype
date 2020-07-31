@@ -26,7 +26,7 @@ export const PublicationTime = styled.Text``;
 
 export const Body = styled.View`
   height: 200px;
-  background-color: red;
+  background-color: ${AppColors.primaryColor};
 `;
 
 export const Footer = styled.View`
