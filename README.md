@@ -7,23 +7,23 @@
 </a>
 
 <a href="#">
-<img alt="Linguagens" src="https://img.shields.io/github/languages/count/joaovictorpsantos/social-app?color=364d6a&style=flat-square">
+<img alt="Linguagens" src="https://img.shields.io/github/languages/count/joaovictorpsantos/social-app-prototype?color=364d6a&style=flat-square">
 </a>
 
-<a href="https://github.com/joaovictorpsantos/social-app/stargazers">
-<img alt="Stars" src="https://img.shields.io/github/stars/joaovictorpsantos/social-app?color=364d6a&style=flat-square">
+<a href="https://github.com/joaovictorpsantos/social-app-prototype/stargazers">
+<img alt="Stars" src="https://img.shields.io/github/stars/joaovictorpsantos/social-app-prototype?color=364d6a&style=flat-square">
 </a>
 
-<a href="https://github.com/joaovictorpsantos/social-app/network/members">
-<img alt="Forks" src="https://img.shields.io/github/forks/joaovictorpsantos/social-app?color=364d6a&style=flat-square">
+<a href="https://github.com/joaovictorpsantos/social-app-prototype/network/members">
+<img alt="Forks" src="https://img.shields.io/github/forks/joaovictorpsantos/social-app-prototype?color=364d6a&style=flat-square">
 </a>
 
 <a href="#">
-<img alt="Tamanho do código em bytes" src="https://img.shields.io/github/languages/code-size/joaovictorpsantos/social-app?color=364d6a&style=flat-square">
+<img alt="Tamanho do código em bytes" src="https://img.shields.io/github/languages/code-size/joaovictorpsantos/social-app-prototype?color=364d6a&style=flat-square">
 </a>
 
 <a href="https://github.com/joaovictorpsantos/social-app/commits/master">
-<img alt="Commits" src="https://img.shields.io/github/last-commit/joaovictorpsantos/social-app?color=364d6a&style=flat-square">
+<img alt="Commits" src="https://img.shields.io/github/last-commit/joaovictorpsantos/social-app-prototype?color=364d6a&style=flat-square">
 </a>
 
 <br/><br/>
